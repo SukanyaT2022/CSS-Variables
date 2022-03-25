@@ -1,0 +1,87 @@
+:root {
+--pink :#E74C3C; /*if we change color inside root-- all color in this page will change --*/
+--brown: #581845;
+--backgroundColor:#0ef76fde;
+--font:Arial, Helvetica, sans-serif;
+--border: 10px double orange;
+}
+/*root is variable to set color shade and use repeatly*/
+ /* font --set var here so we do not need to change font in every code--just set variable -use line28*/
+
+
+
+.box1{
+    border:var(--border); /*this is border varable*/
+    background-color: var(--backgroundColor);
+    /*width: 85%;*/ 
+    /*remove width becasue we use max width*/
+    text-align: center;
+    color: var(--brown);
+    margin: 20px auto; /*move box to center*/
+    font-family: Arial, Helvetica, sans-serif;
+
+
+    max-width: 600px;/* mid-width help the page to be responsive 
+    and when expand over 600px--size will not change will stop at 600px*/
+    min-width:300px ;
+    /*min-width when reduce will stop at 300px--size of the box will not decrese after 300px*/
+    max-height: 400px;
+    min-height: 200px;
+    /* max-height set the size box can not explan higer than700px and min-height can not be shrink smaller than 200px*/
+
+}
+.box2{
+    border:10px dotted var(--pink); /*this is color variable*/
+    background-color: var(--backgroundColor);
+    width: 85%;
+    text-align: center;
+    color: var(--brown);
+    margin: 20px auto; /*move box to center*/
+    font-family: var(--font);/*this is font variable*/
+
+
+}
+.box3{
+    border:10px dotted var(--pink);
+    background-color: var(--backgroundColor);
+    width: 85%;
+    text-align: center;
+    color: var(--brown);
+    margin: 20px auto; /*move box to center*/
+    /*change box side by side cange in parent which is box3 by using display flex*/
+    display: flex;
+
+
+
+}
+.head{
+    background: #E74C3C;
+    width: 50%;
+    height:;
+}
+
+.text{
+    width: 50%;
+    padding: 30px; /*padding increase the hight of the box*/
+  
+}
+
+/*make image fit inside box perfectly*/
+
+.box4-image{ /* target image box*/
+    max-width: 500px;
+    min-width: 200px;
+    max-height: 400px;
+    min-height: 200px;
+    border:var(--border);
+    margin: 10px auto ;
+    
+
+
+}
+.box4-image img{  /*target only image*/
+    width: 100%;
+    height: 100%;
+}
+
+
